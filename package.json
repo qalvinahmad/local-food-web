@@ -1,0 +1,17 @@
+{
+  "name": "jajan-web",
+  "version": "1.0.0",
+  "description": "Jajan web application",
+  "scripts": {
+    "start": "serve -s . -p 3000",
+    "install-deps": "npm install",
+    "dev": "serve -s . -p 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {},
+  "keywords": ["jajan", "food", "semarang"],
+  "author": "",
+  "license": "ISC"
+}
