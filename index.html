@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Slider | Right/Left Arrow Navigation, Autoplay With Infinite Loop & Pagination With Slide Buttons - Html, Css & Javascript</title>
+  <!--========== Main style sheet ==========-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--========== Remixicon ==========-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body>
+  
+  <!--========== Preloader ==========-->
+  <div class="preloader">
+    <div class="preloader-text">Jajan.cfd</div>
+  </div>
+  
+  <!--========== Main section ==========-->
+  <section class="slider-container">
+    <div class="logo">Jajan.cfd</div>
+    <!--========== Slider ==========-->
+    <div class="slider">
+      <!--========== Slide 1 ===========-->
+      <div class="slide active">
+        <div class="slide-img" style="background-image: url('assets/images/bg-1.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Sambel Korek</h1>
+            <img src="assets/images/animal-1.png" alt="Red Fox" class="animal-image">
+            <p class="slide-description"></p>Nikmati ayam goreng renyah dengan sambel korek pedas yang memanjakan lidah. Setiap gigitan menawarkan rasa pedas yang berpadu sempurna dengan kelembutan ayamnya!
+            <button class="detail-btn" data-video="assets/videos/animal-video-1.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 2 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-2.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Tahu Susu</h1>
+            <img src="assets/images/animal-2.png" alt="Parrots" class="animal-image">
+            <p class="slide-description">Tahu dengan tekstur lembut dan rasa susu yang khas, dibuat dengan susu murni berkualitas tinggi. Tahu ini memiliki rasa yang gurih dan creamy, sangat cocok dijadikan camilan sehat.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-2.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 3 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-3.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Sambel Pecel</h1>
+            <img src="assets/images/animal-3.png" alt="Leopard" class="animal-image">
+            <p class="slide-description">Sambal berbahan dasar kacang tanah yang dihaluskan dengan berbagai bumbu seperti cabai, daun jeruk, dan gula merah. Cocok untuk pelengkap sayuran rebus dan gorengan.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-3.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 4 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-4.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Bandeng Presto</h1>
+            <img src="assets/images/animal-4.png" alt="Toucan" class="animal-image">
+            <p class="slide-description">Ikan bandeng yang dimasak dengan metode presto sehingga durinya menjadi lunak dan bisa dimakan. Dibumbui dengan rempah-rempah khas yang meresap hingga ke dalam daging ikan.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-4.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 5 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-5.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Dimsum</h1>
+            <img src="assets/images/animal-5.png" alt="Koala" class="animal-image">
+            <p class="slide-description">Hidangan khas Tiongkok yang terdiri dari berbagai jenis makanan seperti siomay, pangsit, dan bakpao. Biasanya disajikan dengan teh sebagai makanan ringan</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-5.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 6 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-6.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Wingko Babat</h1>
+            <img src="assets/images/animal-6.png" alt="Flamingos" class="animal-image">
+            <p class="slide-description">Kue tradisional yang terbuat dari kelapa muda, tepung ketan, dan gula. Memiliki tekstur kenyal dan rasa manis gurih yang khas, sangat cocok untuk oleh-oleh.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-6.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 7 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-7.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Bubur Tahu</h1>
+            <img src="assets/images/animal-7.png" alt="Chameleon" class="animal-image">
+            <p class="slide-description">tahu yang disajikan dalam kuah kaldu hangat dengan bumbu sederhana. Biasanya ditambahkan daun bawang, kecap, dan sedikit sambal untuk memberi rasa.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-7.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 8 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-8.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Egg Roll</h1>
+            <img src="assets/images/animal-8.png" alt="Zebras" class="animal-image">
+            <p class="slide-description">Kue kering berbentuk gulungan yang terbuat dari telur, tepung terigu, dan gula. Memiliki tekstur renyah dan rasa manis yang pas, sangat cocok untuk camilan atau oleh-oleh khas Semarang.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-8.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 9 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-9.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Es Gempol Pleret</h1>
+            <img src="assets/images/animal-9.png" alt="Penguins" class="animal-image">
+            <p class="slide-description">Cookies dengan bentuk bulat pipih yang terbuat dari tepung berkualitas tinggi. Rasanya manis dan teksturnya renyah, merupakan salah satu oleh-oleh modern khas Semarang yang populer.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-9.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 10 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-10.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Lumpia Pak Ngadi</h1>
+            <img src="assets/images/animal-10.png" alt="Elephant" class="animal-image">
+            <p class="slide-description">Lumpia legendaris dengan isian rebung, telur, dan udang yang dibungkus dengan kulit lumpia tipis renyah. Disajikan dengan saus kacang dan cabai yang menambah kelezatannya.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-10.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 11 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-11.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Nasi Ayam</h1>
+            <img src="assets/images/animal-11.png" alt="Giraffe" class="animal-image">
+            <p class="slide-description">Nasi dengan potongan ayam yang dimasak dengan bumbu khas, disajikan dengan kuah kaldu gurih. Dilengkapi dengan telur dan sayuran, menjadikannya hidangan yang mengenyangkan.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-11.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 12 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-12.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Mie Kopyok</h1>
+            <img src="assets/images/animal-12.png" alt="Lion" class="animal-image">
+            <p class="slide-description">Mie dengan kuah bening segar yang disajikan dengan tauge, tahu, dan kerupuk. Dinamakan kopyok karena cara penyajiannya yang dikopyok (dikocok) terlebih dahulu.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-12.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 13 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-13.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Soto Bangkong</h1>
+            <img src="assets/images/animal-13.png" alt="Tiger" class="animal-image">
+            <p class="slide-description">Soto legendaris dengan kuah bening yang kaya rempah, berisi suwiran ayam, tauge, dan bihun. Disajikan dengan sambal dan kecap, menjadi favorit warga Semarang sejak lama.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-13.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 14 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-14.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Kopi Tarik Ungaran</h1>
+            <img src="assets/images/animal-14.png" alt="Panda" class="animal-image">
+            <p class="slide-description">Minuman kopi khas dengan teknik penyajian yang unik, dituangkan berulang kali untuk menghasilkan lapisan busa yang creamy. Memiliki rasa kopi yang kuat dengan sentuhan manis yang pas.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-14.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 15 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-17.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Ainun Cake</h1>
+            <img src="assets/images/animal-15.png" alt="Kangaroo" class="animal-image">
+            <p class="slide-description">Cake modern dengan berbagai varian rasa yang lembut dan moist. Dibuat dengan bahan berkualitas dan resep khusus, menjadi salah satu oleh-oleh favorit dari Semarang.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-15.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 16 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-16.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Garang Asem Bumbung</h1>
+            <img src="assets/images/animal-16.png" alt="Polar Bear" class="animal-image">
+            <p class="slide-description">Masakan tradisional berbahan dasar ayam yang dimasak dalam bumbung bambu dengan bumbu asam pedas. Memiliki aroma khas dan rasa yang kompleks dari perpaduan santan dan asam.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-16.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 17 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-15.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Nasi Goreng Babat</h1>
+            <img src="assets/images/animal-17.png" alt="Cheetah" class="animal-image">
+            <p class="slide-description">nasi goreng khas Semarang yang menggunakan babat sapi sebagai bahan utamanya. Babat dimasak hingga empuk dan dipadukan dengan nasi, bumbu rempah, serta tambahan seperti telur dan sayuran.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-17.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 18 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-18.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Kue Mochi</h1>
+            <img src="assets/images/animal-18.png" alt="Rhinoceros" class="animal-image">
+            <p class="slide-description">Kue dengan tekstur kenyal dari tepung ketan yang diisi dengan kacang tanah giling dan gula. Dibalut dengan tepung kanji agar tidak lengket, memberikan sensasi lembut saat dimakan.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-18.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 19 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-19.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Tahu Petis</h1>
+            <img src="assets/images/animal-19.png" alt="Gorilla" class="animal-image">
+            <p class="slide-description">Tahu goreng yang disajikan dengan saus petis, yaitu saus kental berwarna hitam yang terbuat dari fermentasi udang atau ikan. Rasanya gurih dan sedikit manis.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-19.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+
+      <!--========== Slide 20 ==========-->
+      <div class="slide">
+        <div class="slide-img" style="background-image: url('assets/images/bg-20.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-inner">
+          <div class="slide-content">
+            <div class="slide-category">Jajanan di Semarang</div>
+            <h1 class="slide-title">Kue Sagon</h1>
+            <img src="assets/images/animal-20.png" alt="Orangutan" class="animal-image">
+            <p class="slide-description">Kue tradisional yang terbuat dari parutan kelapa dan tepung ketan, dipanggang hingga kering dan renyah. Memiliki aroma wangi dan rasa manis yang pas.</p>
+            <button class="detail-btn" data-video="assets/videos/animal-video-20.mp4">SELENGKAPNYA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--========== Social media links ==========-->
+    <div class="social-links">
+      <a href="https://gofood.co.id" target="_blank"><img src="assets/icons/gofood-icon.png" alt="GoFood" style="width: 24px; height: 24px;"></a>
+      <a href="https://food.grab.com" target="_blank"><img src="assets/icons/grabfood-icon.png" alt="GrabFood" style="width: 24px; height: 24px;"></a>
+      <a href="https://shopee.co.id/food" target="_blank"><img src="assets/icons/shopeefood-icons.png" alt="ShopeeFood" style="width: 24px; height: 24px;"></a>
+    </div>
+    
+    <!--========== Slider left/right arrow navigation ==========-->
+    <div class="navigation">
+      <div class="nav-btn prev-btn"><i class="ri-arrow-left-s-line"></i> Prev</div>
+      <div class="nav-btn next-btn">Next <i class="ri-arrow-right-s-line"></i></div>
+    </div>
+    
+    <!--========== Slide visibility indicator bars for each slide ==========-->
+    <!-- Make sure you have this structure in your HTML -->
+    <div class="progress-bars">
+      <!-- Progress bars will be generated dynamically by JavaScript -->
+    </div>
+    <!-- Add this after the slider div -->
+    <div class="horizontal-progress-container">
+      <div class="horizontal-progress"></div>
+    </div>
+  </section>
+  
+  <!--========== Modal Dialog ==========-->
+  <!-- Add this modal structure before the closing body tag -->
+  
+  <!-- Detail Modal -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Food Title</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      
+      <div class="modal-image-section">
+        <img src="" alt="Food Image" class="food-image">
+      </div>
+      
+      <div class="modal-info-section">
+        <div class="food-details">
+          <h3>Informasi</h3>
+          <div class="detail-item">
+            <div class="detail-label">Harga:</div>
+            <div class="detail-value food-price">Rp 25.000</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Jam Buka:</div>
+            <div class="detail-value opening-hours">08:00 - 21:00</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Spesialitas:</div>
+            <div class="detail-value speciality">Pedas dan gurih</div>
+          </div>
+        </div>
+        
+        <div class="location-section">
+          <h3>Lokasi</h3>
+          <div class="detail-item">
+            <div class="detail-label">Alamat:</div>
+            <div class="detail-value location-address">Jl. Pandanaran No. 123, Semarang</div>
+          </div>
+          
+          <div class="action-buttons">
+            <a href="#" class="action-button map-button map-link" target="_blank">
+              <i class="ri-map-pin-line"></i> Lihat Peta
+            </a>
+            <a href="#" class="action-button whatsapp-button whatsapp" target="_blank">
+              <i class="ri-whatsapp-line"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts - Update order and remove type="module" -->
+  <script src="assets/js/modalData.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
