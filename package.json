@@ -6,8 +6,8 @@
     "start": "serve -s . -p 3000",
     "install-deps": "npm install",
     "dev": "serve -s . -p 3000",
-    "vercel-build": "npm run build",
-    "build": "cp -r . dist/"
+    "vercel-build": "echo 'Build step complete'",
+    "build": "echo 'Build complete'"
   },
   "dependencies": {
     "serve": "^14.2.1"
